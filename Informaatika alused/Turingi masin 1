@@ -1,0 +1,16 @@
+{
+   "name": "Binary Increment",
+   "description": "The Binary Increment Turing machine will add one to a binary number and halt. It must be started on the right end of the number that is to be incremented.",
+   "max_state": 25,
+   "symbols": "xyzabc01$@",
+   "tape": "0100001111$   $",
+   "position": 14,
+   "rules": [
+      [ 0, "0", "0", 0, "R" ],
+      [ 0, "1", "1", 0, "R" ],
+      [ 0, "$", "$", 1, "R" ],
+      [ 1, "0", "#", 1, "R" ],
+      [ 1, "1", "#", 1, "R" ],
+      [ 1, "$", "$", 1, "S" ]
+   ]
+}
